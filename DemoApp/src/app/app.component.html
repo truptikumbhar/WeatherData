@@ -16,7 +16,7 @@
               <form [formGroup]="cityForm" (ngSubmit)="getCityData()">
                 <label>City Name</label><br>
                 <input formControlName="city" placeholder="Enter City" /><br>
-                <p *ngIf="city != ''">Enter City</p><br><br>
+                <p *ngIf="city != ''"> City is required</p><br><br>
                 <button type="submit"  style="background-color: skyblue;">Fetch Data</button>
               </form>
             </div>
@@ -27,13 +27,13 @@
               <h3>Weather Details </h3>
               <table>
                 <tr>
-              <td><p>Country: {{sysData.country}} </p> </td><td> <p>Sunrise: {{sysData.sunrise}} </p><br>
-              <br> </td></tr>
-             <tr> <td> <p>Sunset: {{sysData.sunset}} </p> </td><td> <p> Weather Main {{weatherData.main}}</p><br>
-              <br></td></tr>
-            <tr> <td> <p>Temprature: {{mainData.temp}}  </p> </td><td> <p>Temprature Max: {{mainData.temp_max}} </p> <br>
-               <br></td></tr>
-              <tr> <p>Temprature Min: {{mainData.temp_min}} </p>  <br></tr>
+              <td><p>Country: {{sysData.country}} </p> </td><td> <p>Sunrise: {{sysData.sunrise}} </p>
+               </td></tr>
+             <tr> <td> <p>Sunset: {{sysData.sunset}} </p> </td><td> <p> Weather Main {{weatherData.main}}</p>
+              </td></tr>
+            <tr> <td> <p>Temprature: {{mainData.temp}}  </p> </td><td> <p>Temprature Max: {{mainData.temp_max}} </p> 
+               </td></tr>
+              <tr> <p>Temprature Min: {{mainData.temp_min}} </p>  </tr>
             </table>
 
             </div>
